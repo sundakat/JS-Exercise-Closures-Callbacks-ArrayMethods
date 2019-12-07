@@ -261,10 +261,12 @@ function counterMaker() {
   // BROKEN CODE STARTS
   let count = 0;
   function counter() {
-    count++;
+    return count++
   }
-  return counter;// BROKEN CODE ENDS
+  // BROKEN CODE ENDS
+  return counter;
 }
+  
 
 /**
  * ### Challenge `counterMakerWithLimit`
